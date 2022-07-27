@@ -1,0 +1,201 @@
+/* common */
+
+html {
+  text-size-adjust: 100%;
+  font-family: 游ゴシック, YuGothic, -apple-system, Roboto, Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Noto Sans", "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+
+p {
+  margin: 0;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.container {
+  margin: 0 26px;
+  /* outline: 2px solid red; */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 25px;
+    width: 160px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 550;
+    background-color: #2e8b57;
+    border-radius: 50vh;
+    border: 1px solid #2e8b57;
+    transition: all 0.3s ease 0s;;
+}
+
+.btn:hover {
+  background: #fff;
+	color: #2e8b57;
+}
+
+/* header */
+
+header {
+  padding: 8px 0;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+}
+
+header li + li {
+  margin-left: 45px;
+}
+
+header nav {
+  margin-right: 40px;
+}
+
+header li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  /* transition: opacity .3s; */
+}
+
+/* header li a:hover {
+  opacity: .5;
+} */
+
+header li a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+
+a:hover::after {
+  transform: scale(1, 1);
+}
+
+/* main */
+
+#flinner {
+  display: flex;            /* ◎ */
+  justify-content: center;          /* ◎ 真ん中に画像配置*/
+}
+
+.bg_inner {
+  text-align: center;
+  display: inline-block;
+  width:100%;
+  height:851px;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */    /* 画像が一緒に流れてしまう */
+  background-blend-mode: darken;
+  background-color: rgba(110, 110, 110, 0.6);
+}
+
+.bg-text {
+  white-space: nowrap;
+  /* border: solid 1px; */
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-text h2 {
+  font-size: 70px;
+  letter-spacing: 1px;
+}
+
+.bg-text p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.bg-text a {
+  margin-top: 60px;
+}
+
+/* section2 */
+
+.startup {
+  display: block;
+  /* font-size: 20px; */
+  /* margin: 200px; */
+  text-align: center;
+  margin-bottom: 160px;
+}
+
+.startup h2 {
+  margin-top: 318px;
+}
+
+.startup h3 {
+  font-size: 25px;
+  margin-top: 100px;
+}
+
+.startup p {
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* section3 */
+
+.mycan h2 {
+  margin-top: 172px;
+  text-align: center;
+}
+
